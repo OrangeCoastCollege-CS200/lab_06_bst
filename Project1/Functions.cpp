@@ -26,7 +26,7 @@ void BST::insert(int newData) {
 				}
 			}
 			else if (newData > curr->data) {
-				if (curr->rlink != nullptr) 
+				if (curr->rlink != nullptr)
 					curr = curr->rlink;
 				else {
 					curr->rlink = new Node;
@@ -48,7 +48,7 @@ void BST::insert(int newData) {
 
 // Definition function totalNodes
 int BST::totalNodes() const {
-	if (root != nullptr) 
+	if (root != nullptr)
 		return totalNodes(root);
 	else return 0;
 }
@@ -60,7 +60,7 @@ int BST::totalNodes(const Node * node) const {
 }
 // Definition overloaded function preorderTraversal
 void BST::preorderTraversal() const {
-	if (root != nullptr) 
+	if (root != nullptr)
 		preorderTraversal(root);
 	else cerr << "Attempted to traverse a non-existing tree.";
 }
@@ -74,7 +74,7 @@ void BST::preorderTraversal(const Node * node) const {
 }
 // Definition overloaded function postorderTraversal
 void BST::postorderTraversal() const {
-	if (root != nullptr) 
+	if (root != nullptr)
 		postorderTraversal(root);
 	else cerr << "Attempted to traverse a non-existing tree.";
 }
