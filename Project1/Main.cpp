@@ -73,5 +73,5 @@ void testTree(const BST& bst)
 	//other testcases
 
 	//TEST: totalNodes
-	/*cout << "\nTotal nodes: " << bst.totalNodes();*/
+	cout << "\nTotal nodes: " << bst.totalNodes();
 }

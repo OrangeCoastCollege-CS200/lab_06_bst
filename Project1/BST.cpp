@@ -2,22 +2,22 @@
 
 BST::BST() : root(nullptr) {}
 
-void BST::insert(int insertItem)
-{
-	Node  *newNode = new Node;
-	newNode->data = insertItem;
-	insert(root, newNode);
-}
-
-void BST::insert( Node* &p, Node *newNode)
-{
-	if (p == nullptr)
-		p = newNode;
-	else if (p->data > newNode->data)
-		insert(p->llink, newNode);
-	else
-		insert(p->rlink, newNode);
-}
+//void BST::insert(int insertItem)
+//{
+//	Node  *newNode = new Node;
+//	newNode->data = insertItem;
+//	insert(root, newNode);
+//}
+//
+//void BST::insert( Node* &p, Node *newNode)
+//{
+//	if (p == nullptr)
+//		p = newNode;
+//	else if (p->data > newNode->data)
+//		insert(p->llink, newNode);
+//	else
+//		insert(p->rlink, newNode);
+//}
 
 void BST::inorderTraversal() const
 {
